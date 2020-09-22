@@ -1,7 +1,7 @@
 # PHP Clock abstraction
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/baldinof/clock.svg?style=flat-square)](https://packagist.org/packages/baldinof/clock)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/baldinof/clock/run-tests?label=tests)](https://github.com/baldinof/clock/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/baldinof/clock/Tests)](https://github.com/baldinof/clock/actions?query=workflow%3Arun-tests+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/baldinof/clock.svg?style=flat-square)](https://packagist.org/packages/baldinof/clock)
 
 Get current time in a static _and_ testable way.
