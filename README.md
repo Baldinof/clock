@@ -71,6 +71,31 @@ final class UserTest extends TestCase
 }
 ```
 
+You can allso explicitly manipulate the clock
+```php
+use Baldinof\Clock\Testing\FrozenClockTrait;
+use Baldinof\Clock\Clock;
+use PHPUnit\Framework\TestCase;
+
+final class UserTest extends TestCase
+{
+    use FrozenClockTrait;
+
+    public function my_function()
+    {
+        // Set the clock at a specified time.
+        $this->freezeClock(new \DateTimeImmutable('2000-01-01'));
+
+        // Add an hour to the clock.
+        $this->modifyClock('+1 h');
+
+        // Reset the clock.
+        $this->restoreSystemClock();
+    }
+}
+```
+
+
 ## Timezones
 
 Out of the box `Clock::now()` does not pass the timezone argument to the `DateTimeImmutable` constructor, so the **php default timezone is used.**
